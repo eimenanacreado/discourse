@@ -166,6 +166,7 @@ export function acceptance(name, options) {
           options.settings
         );
       }
+      this.siteSettings = Discourse.SiteSettings;
 
       if (options.site) {
         resetSite(Discourse.SiteSettings, options.site);
